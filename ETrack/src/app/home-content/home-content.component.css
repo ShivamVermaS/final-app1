@@ -1,0 +1,12 @@
+/* .imgsize {
+  height: 25vh;
+} */
+
+.imgsize {
+  min-width: 25vw;
+  max-width: 30vw;
+  height: 30vh;
+}
+
+
+  

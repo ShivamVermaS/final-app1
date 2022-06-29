@@ -1,0 +1,112 @@
+<section class="vw-auto bg-image">
+  <form [formGroup]="loginForm">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem">
+            <div class="card-body p-5 text-center">
+              <div class="mb-md-5 mt-md-4 pb-5">
+                <h2 class="fw-bold mb-2 text-uppercase login-text">Login</h2>
+                <p class="text-white-50 mb-5">
+                  Please enter your login and password!
+                </p>
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="form3Example1"
+                    >First name</label
+                  >
+                  <input
+                    type="text"
+                    id="form3Example1"
+                    class="form-control"
+                    formControlName="firstName"
+                  />
+                  <span
+                    *ngIf="firstName && firstName.invalid && firstName.touched"
+                    >Please type Correct First Name</span
+                  >
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="form3Example2"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="form3Example2"
+                    class="form-control"
+                    formControlName="lastName"
+                  />
+                  <span *ngIf="lastName && lastName.invalid && lastName.touched"
+                    >Please type Correct Last Name</span
+                  >
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="typeEmailX">Email</label>
+
+                  <input
+                    type="email"
+                    id="form3Example3"
+                    class="form-control"
+                    formControlName="email"
+                  />
+                  <span *ngIf="email && email.invalid && email.touched"
+                    >Please type Correct Email</span
+                  >
+                </div>
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="typePasswordX">Password</label>
+
+                  <input
+                    type="password"
+                    id="form3Example4"
+                    class="form-control"
+                    formControlName="password"
+                  />
+                  <span *ngIf="password && password.invalid && password.touched"
+                    >Please type Correct Password</span
+                  >
+                </div>
+
+                <p class="small mb-5 pb-lg-2">
+                  <a class="text-white-50" href="#!">Forgot password?</a>
+                </p>
+
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form2Example33"
+                    checked
+                  />
+                  <label
+                    class="form-check-label login-text"
+                    for="form2Example33"
+                  >
+                    Subscribe to our courses
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  (click)="getFormValue()"
+                  class="btn btn-block mb-1 ps-4 pe-4 fs-4 fw-bold login-btn"
+                >
+                  Login
+                </button>
+              </div>
+
+              <div>
+                <p class="mb-0">
+                  Don't have an account?
+                  <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
+<br />
+<hr />

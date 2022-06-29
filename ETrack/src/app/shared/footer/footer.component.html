@@ -1,0 +1,41 @@
+<div class="footer-main-div">
+  <div class="p-4 footer-div-1">
+    <div class="footer-div-2 text-white p-3 fs-6">
+      <h3 class="footer-heading">POPULAR COURSES</h3>
+      <br />
+
+      <div *ngFor="let x of list2">
+        <a class="dropdown-item" [routerLink]="['/course', x.id]"
+          >{{ x.title | titlecase }}
+        </a>
+      </div>
+    </div>
+    <div class="footer-div-3 text-white p-3 fs-6">
+      <h3 class="footer-heading"></h3>
+      <br />
+      <br />
+
+      <div *ngFor="let x of courseData">
+        <a class="dropdown-item" [routerLink]="['/course', x.id]"
+          >{{ x.title | titlecase }}
+        </a>
+      </div>
+    </div>
+    <div class="footer-div-4">
+      <h3>
+        <img
+          src="https://www.graphicsprings.com/filestorage/stencils/cbbfb5b19f154658b844a853140b6295.png?width=150&height=150"
+          alt=""
+          height="90px"
+          width="80px"
+        />
+        <span class="text-white footer-heading">𝐄 T 𝐫𝐚𝐜𝐤</span>
+      </h3>
+    </div>
+  </div>
+  <div class="footer-div-5 text-center fs-5">
+    <a routerLink="/home">Home</a>
+
+    <a routerLink="/about">About Us</a>
+  </div>
+</div>

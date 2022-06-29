@@ -1,0 +1,39 @@
+<div class="view">
+  <div class="card mb-3" style="max-width: 80vw">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          src="{{ courseDetails.image }}"
+          class="img-fluid rounded-start size"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">{{ courseDetails.title }}</h3>
+          <br />
+          <p class="card-text fontstyle">
+            {{ courseDetails.discription }}
+          </p>
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto p-2 bd-highlight fontstyle">
+              Duration:{{ courseDetails.duration }}
+            </div>
+            <div class="p-2 bd-highlight fontstyle">
+              fee:{{ courseDetails.fee | currency: "INR" }}
+            </div>
+          </div>
+          <p class="card-text">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              (click)="goForCheckCourse(courseDetails)"
+            >
+              Apply
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

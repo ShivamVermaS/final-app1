@@ -1,0 +1,16 @@
+<div>
+  <div class="container mt-md-4">
+    <div class="row">
+      <div class="col" *ngFor="let x of courseData">
+        <a [routerLink]="['/course', x.id]">
+          <div class="card my-3 card-width zoom">
+            <img src="{{ x.image }}" class="card-img-top imgsize" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text">{{ x.title }}</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

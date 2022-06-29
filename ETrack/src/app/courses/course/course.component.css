@@ -1,0 +1,14 @@
+.size {
+  min-width: 25vw;
+  max-width: 25vw;
+  height: 47vh;
+}
+.text {
+  text-decoration: none;
+}
+.view {
+  margin: 8rem;
+}
+.fontstyle {
+  font-size: 1.5rem;
+}
